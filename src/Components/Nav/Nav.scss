@@ -1,0 +1,143 @@
+@import '../../global.scss'; 
+
+.nav{
+    background-color: $mainColor;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    // transition: all 2s ease;
+    color: black;
+    position: fixed;
+    width: 100%;
+
+
+    .left{
+        flex:0.3;
+        margin:0 2%;
+        padding-left: 4%;
+
+
+        span{
+            color: white;
+            font-size: 25px;
+            font-weight: 800;
+            border-radius: 50%;
+            transition: all 1s;
+
+            &:hover{
+                cursor: pointer;
+                color: blanchedalmond;
+            }
+        }
+
+        .hamburger{
+            display: none;
+            flex-direction: column;
+            width: 30px;
+
+            span{
+                margin:2px 0;
+                width: 100%;
+                height: 3px;
+                background-color: black;
+            }
+        }
+    }
+
+
+    .right{
+        flex: 0.7;
+        display: flex;
+        justify-content:start;
+        transition: all 2s ease;
+        
+
+        .right-wrapper{
+            width: 400px;
+            display: flex;
+            margin-right: 15%;
+            justify-content: space-between;
+
+            a{
+                text-decoration: none;
+                font-size: 20px;
+                color: white;
+                font-weight: 650;
+                transition: all 0.5s ease;
+
+                &:hover{
+                    color: rgb(206, 197, 200);
+                    transform: scale(1.3);
+                }
+            }
+
+            
+
+        }
+
+       
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .nav{
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        height: fit-content;
+        transition: all 2s ease;
+
+        .left{
+            margin-top: 10px;
+            flex: 1;
+            display: flex;
+            justify-content: space-around;
+
+
+            .hamburger{
+                display: flex;
+                margin-right: 40px;
+                cursor: pointer;
+                
+            }
+        }
+
+        .right{
+            flex: 1;
+
+            .right-wrapper{
+                margin: 0%;
+               
+                a{
+                    display: none;
+                }
+                
+                &.active{
+                    transition: all 2s ease;
+                    display: block;
+                    width: 100%;
+                    height: 100px;
+                    background-color: blanchedalmond;
+
+                    a{
+                        display:flex;
+                        justify-content: center;
+                        color: $blueBG;
+                        &:hover{
+                            transform: scale(1.3);
+                            background-color: whitesmoke;
+                        }
+                    
+                    }
+                }
+
+            }
+
+        }
+        
+
+      
+    }
+    
+}

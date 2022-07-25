@@ -1,0 +1,172 @@
+@import '../../global.scss';
+
+.resume{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: $mainColor;
+
+    .container{
+        width: 70%;
+        height: 80%;
+        background-color: whitesmoke;
+        display: flex;
+        margin:0 10px;
+
+        .left{
+            flex: 0.35;
+            display: flex;
+            align-items: center;
+            
+
+            .left-wrapper{
+                
+                margin: 20px 30px;
+                height: 70%;
+                width: 100%;
+                display: flex;
+            
+
+                .icons-wrapper{
+                    background-color: $blueBG;
+                    height: 100%;
+                    width: 25px;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-around;  
+                    color: white;                  
+                }
+
+                .text-wrapper{
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-around;
+                    width:150px;
+
+                    .text{
+                        height: 25px;
+                        width: 100%;
+                        text-align: center;
+                        cursor: pointer;
+                        position: relative;
+                        z-index: 10;
+
+                        .movable{
+                            height: 25px;
+                            transform-origin: left;
+                            transition: width 1s;    
+                            position: absolute;
+                            width: 0px;
+                            border-bottom-right-radius: 20px;
+                            border-top-right-radius: 20px;
+                        }
+
+                        p{
+                            position: relative;
+                            margin: 4px 0;
+                            font-weight: $mainWeight;
+                            z-index: 1;
+                        }
+
+                        &.active{
+
+                            .movable{
+                                width: 150px;
+                                background-color: $blueBG
+                                
+                            }
+
+                            p{
+                                color: white;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+        .right{
+            flex: 0.65;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .right-wrapper{
+                display: flex;
+                flex-flow: wrap;
+                flex-direction: column;
+                width: 95%;
+                height: 75%;
+                margin:5px;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+
+    .resume{
+        
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .left{
+                flex: 0.5;
+                
+
+                .left-wrapper{
+                    height: 80%;
+                    justify-content: center;
+
+                    .icons-wrapper{
+                        width: 6%;
+                        height: 100%;
+
+                    }
+
+                    .text-wrapper{
+                        
+                        .text{
+                            font-size: $resFont;
+                            .movable{
+                                height: 20px;
+
+                            }
+                        }
+
+                        p{
+
+
+                        }
+
+                        &.active{
+
+                            .movable{
+
+                            }
+                        }
+
+                    }
+                }
+            }
+        
+
+
+            .right{
+                flex: 0.5;
+                flex-wrap: wrap;
+                height: 50%;
+                justify-content: center;
+                .right-wrapper{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

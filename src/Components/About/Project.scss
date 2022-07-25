@@ -1,0 +1,112 @@
+@import '../../global.scss';
+
+.project{
+    height: 100%;
+    display: flex;
+
+
+    .left-project{
+        border-right:1px solid black ;
+        flex: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        .left-wrapper-project{
+            width: 100%;
+            color: $mainColor;
+            h2{
+                font-size: $titleFont;
+                margin: 5px 0;
+                color: $blueBG
+            }
+
+            p{
+                margin: 5px 10px;
+                text-align: justify;
+                font-size: $contentFont;
+                font-weight: $mainWeight;
+            }
+
+            .skills{
+                margin: 20px 10px;
+                display: flex;
+                flex-flow: wrap;
+                width: 100%;
+                span{
+                    font-size: $contentFont;
+                    font-weight: 500;
+                    background-color: $blueBG;
+                    color: white;
+                    border-radius: 20px;
+                    border: 1px solid rgb(214, 149, 9);
+                    margin: 5px;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+    .right-project{
+        flex: 0.5;
+        display: flex;
+        align-items: center;
+        
+        justify-content: center;
+        .right-wrapper-project{
+            width: 80%;
+            
+
+            .pic{
+                width: 100%;
+                height: auto;
+            }
+        }
+        
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+    .project{
+        flex-direction: column;
+        // margin: 0;
+        .left-project{
+            border-right: none;
+            border-bottom: 1px solid black;
+            .left-wrapper-project{
+
+                h2{
+                    font-size: $titleFont;
+                }
+                p{
+                    font-size: $resFont;
+                }
+                .skills{
+
+                    span{
+                        font-size: $resFont;
+                        margin: 3px;
+                        padding: 4px;
+                    }
+                }
+
+            }
+        }
+
+        .right-project{
+            
+            
+            .right-wrapper-project{
+               
+               
+
+                .pic-project{
+
+                }
+
+            }
+        }
+    }
+}

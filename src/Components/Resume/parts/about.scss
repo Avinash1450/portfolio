@@ -1,0 +1,44 @@
+@import '../../../global.scss';
+
+
+.about-wrapper{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    width: 100%;
+    text-align: center;
+    .about-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        height: 30px;
+        margin: 20px 0;
+        font-size: $paraFont;
+        font-weight: 500;
+        background-color: $blueBG;
+        color: white;
+
+        .title{
+            margin: 0 5px;
+
+        }
+
+        .value{
+            margin: 0 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .about-wrapper{
+
+
+        .about-container{
+            height: fit-content;
+            margin: 10px 10px;
+            font-size: $resFont;
+        }
+    }
+}

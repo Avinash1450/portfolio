@@ -1,0 +1,87 @@
+@import '../../../global.scss';
+
+.education{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+
+    .wrapper{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        background-color: $blueBG ;
+        color: white;
+        .left-edu{
+            flex: 0.7;
+                .header{
+                    width: 100%;
+                    text-align: left;
+                    font-size: $paraFont;
+                    font-weight: $mainWeight;
+                    margin-left: 10px;
+                }
+
+        }
+        
+        .right-edu{
+            flex: 0.3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+                .year{
+                    border: 2px solid white;
+                    background-color: $spanColor;
+                    padding: 5px;
+                    border-radius: 20px;
+                    font-size: $contentFont;
+                    font-weight: $spanWeight
+                }
+            
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+    .education{
+
+        .wrapper{
+            border: 1px solid black;
+            width: 100%;
+            flex-direction: row;
+            height: 30px;
+            .left-edu{
+                width: 60%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .header{
+                    width: 100%;
+                    font-size: $resFont;
+
+                }
+            }
+
+            .right-edu{
+                flex: 0.5;
+                height: 40px;
+              
+                .year{
+                    display: flex;
+                    align-items: center;
+                    height: 20px;
+                    border-radius: 15px;
+                    font-size: 12px;
+                    padding: 2px;
+                }
+            }
+        }
+    }
+}

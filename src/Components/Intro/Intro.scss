@@ -1,0 +1,153 @@
+@import "../../global.scss";
+
+.intro{
+    background-color:$mainColor;
+    height: calc(100vh);
+    color: rgb(14, 10, 4);
+
+    .wrapper{
+        display: flex;
+        height: 100%;
+        margin:0 5%;
+        
+        .left{
+            flex: 1;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .left-wrapper{
+                width: 70%;
+
+                p{
+                    text-align: center;
+                    font-weight: $mainWeight;
+                    font-size: $paraFont;
+
+                    &:first-child{
+                        margin: 10px 0;
+                        height: 20px;
+                        color: rgb(243, 236, 245);
+                    }
+
+                    
+                    &:nth-child(3){
+                        margin: 10px 0;
+
+                    span{
+                        margin: 0 5px;
+                        font-size: 4vw;
+                        font-weight: 800;
+                        &:first-child{
+                            color: whitesmoke;
+                        }
+                        &:last-child{
+                            color:black
+                        }
+                    }
+                }
+                }
+                .btn{
+                    width: 100%;
+                    text-align: center;
+                    margin-top: 10px;
+                a{
+                    button{
+                        cursor: pointer;
+                        padding:10px 7px;
+                        border: 0.5px solid rgb(252, 248, 248);   
+                        border-radius: 20px;
+                        background-color: $spanColor;
+
+                        span{
+                            margin: 10px;
+                            font-size: 15px;
+                            font-weight: 600;
+                            color: rgb(245, 245, 237);
+                        }
+                    }
+                }
+            }
+
+            }
+
+        }
+
+        .right{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .right-wrapper{
+                width: 50%;
+                height: 50%;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                transition: scale 0.5s;
+
+                .pic{
+                    border-radius: 70%;
+                    
+
+                    img{
+                        border-radius: 47%;
+                        width: 100%;
+                        height: auto;
+                        transition: all 0.5s;
+
+                        &:hover{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+    
+
+            }
+
+           
+
+        }
+    }
+}
+
+
+@media only screen and (max-width:600px) {
+    
+    .wrapper{
+        flex-direction: column-reverse;
+
+        .left{
+            margin-bottom: 150px;
+            width: 100%;
+           .left-wrapper{
+
+                .p{
+                    font-size: 25px;
+                }
+            
+           }
+
+        }
+        .right{
+            flex: 0.3;
+
+            .right-wrapper{
+                .pic{
+                    
+                    width: 100px;
+                    height: 50px;
+
+                    img{
+                        width: 100%;
+                        height: auto;
+                    }
+                    
+                }
+            }
+        }
+    }
+}

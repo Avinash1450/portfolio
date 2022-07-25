@@ -1,0 +1,47 @@
+@import '../../../global.scss';
+
+
+.others{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+
+    ul{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 100%;
+        li{
+            list-style: none;
+            width: 100%;
+            text-align: center;
+            height: fit-content;
+            background-color: $blueBG;
+            p{
+                font-size: $paraFont;
+                color: white;
+                font-weight: 450;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .others{
+
+        ul{
+
+            li{
+
+                p{
+                    font-size: $spanFont;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,73 @@
+@import '../../../global.scss';
+
+.skills-wrapper{
+    display: flex;
+    // border: 2px solid black;
+    width: 40%;
+    padding: 8px;
+    margin: 2%;
+    color: white;
+    background-color: $blueBG;
+    .lan{
+        flex: 0.25;
+        font-size: $paraFont;
+        font-weight: 550;
+    }
+
+    .skills-box{
+        flex: 0.75;
+        flex-flow: wrap;
+        margin-left: 5px;
+        // border: 2px solid red;
+        .skills-outer{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(245, 240, 240);
+            .skills-inner{
+                background-color: $mainColor;
+                // width: 50%;
+                height: 100%;
+                text-align: center;
+                .skills-span{
+                    font-weight: 550;
+                    padding-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:800px) {
+
+        .skills-wrapper{
+            
+            width: 90px;
+            margin: 8px 2px;
+            padding: 4px;
+            flex-wrap: wrap;
+            justify-content: center;
+            .lan{
+
+                font-size: $resFont;
+            }
+
+            .skills-box{
+
+
+                .skills-outer{
+
+
+                    .skills-inner{
+
+
+                        .skills-span{
+                            font-size: $resFont;
+
+                        }
+                    }
+                }
+            }
+        }
+
+
+}
