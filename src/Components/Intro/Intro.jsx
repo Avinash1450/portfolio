@@ -1,5 +1,5 @@
 import './Intro.scss'
-import React, { Component,useEffect,useRef } from 'react'
+import React, { useEffect,useRef } from 'react'
 import { init } from 'ityped'
 
 
@@ -23,7 +23,8 @@ const Intro = ()=>{
                             <p><span>AVINASH</span><span>YADAV</span></p>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ad repellendus reprehenderit voluptate autem natus consectetur dolorum hic, debitis excepturi.</p>
                             <div className="btn">
-                            <a href="" download=""><button><span>RESUME</span></button></a>
+                                <span>Get my resume</span>
+                            <a href="assets/AVINASH YADAV.pdf" download="AVINASHYADAV RESUME"><button><span>RESUME</span></button></a>
                             </div>
                         </div>
                     </div>

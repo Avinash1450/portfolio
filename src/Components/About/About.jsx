@@ -8,8 +8,8 @@ const About = ()=>{
     const Blog = {
         "title" : "Blog App",
         "description" : "Responsive Blog project with two apps handling user data and post data seperately",
-        "link" : "#",
-        "image" : "#",
+        "link" : "https://avinash-djang-blog.herokuapp.com",
+        "image" : "assets/blog.png",
         "skills"  : [
             "HTML",
             "CSS",
@@ -24,8 +24,8 @@ const About = ()=>{
     const Todo = {
         "title" : "Todo App",
         "description" : "Todo App with react js for frontend and django rest_framework for backend and fetch api for fetching data",
-        "link" : "#",
-        "image" : "#",
+        "link" : "https://avinash-todo.netlify.app",
+        "image" : "assets/todo.png",
         "skills"  : [
             "HTML",
             "SASS",
@@ -41,13 +41,25 @@ const About = ()=>{
     const Food = {
         "title"  : "Food app design (only frontend)",
         "description"  : "Fully Responsive food app design",
-        "image" : "#",
+        "image" : "assets/food.png",
         "skills"  : [
             "HTML",
             "CSS",
         ]
     }
 
+    const Portfolio = {
+        "title" : "Portfolio",
+        "description" : "Responsive portfolio based on react js framewrok",
+        "link" : "https://avinash-yadav-portfolio.netlify.app",
+        "image" : "assets/portfolio.png",
+        "skills" : [
+            "HTML",
+            "CSS",
+            "JAVASCRIPT",
+            "REACT JS"
+        ]
+    }
     const [data, setData] = useState(Todo)
 
     return(
@@ -59,9 +71,10 @@ const About = ()=>{
                     <span onClick={()=>setData(Blog)}>BLOG APP</span>
                     <span onClick={()=>setData(Todo)}>TODO APP</span>
                     <span onClick={()=>setData(Food)}>FOOD APP</span>
+                    <span onClick={()=>setData(Portfolio)}>PORTFOLIO APP</span>
                 </div>
                 <div className="lower">
-                   <Project blog = {data}/>
+                   <Project data = {data}/>
                </div>
                </div>
             </div>
