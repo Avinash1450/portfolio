@@ -2,17 +2,16 @@
 
 .contact{
     width: 100%;
-    height: calc(100vh - 14vh);
+    height: calc(100vh);
     background-color: $mainColor;
     display: flex;
     justify-content: center;
     align-items: center;
-
     .contact-wrapper{
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 90%;
+        height: 75%;
         width: 70%;
         border-radius: 20px;
         background-color: $blueBG;

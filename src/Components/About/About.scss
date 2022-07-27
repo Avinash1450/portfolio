@@ -5,10 +5,10 @@
     background-color: $mainColor;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 7vh);
+    height: calc(100vh);
 
     span{
-        margin:10px 10px;
+        margin:5px 10px;
         font-size: $titleFont;
         font-weight: $mainWeight;
     }
@@ -23,7 +23,7 @@
         margin: 0 3%;
         margin-top: 3%;
         width: 70%;
-        height: 80%;
+        height: 75%;
 
 
         .container{

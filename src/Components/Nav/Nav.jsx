@@ -1,8 +1,7 @@
 
 import './Nav.scss'
-import react from 'react'
-import { useRef, useState } from 'react'
-
+import { useState } from 'react'
+import { HashLink } from 'react-router-hash-link';
 
 const Nav = ()=>{
 
@@ -30,10 +29,11 @@ const Nav = ()=>{
             </div>
             <div className="right">
                 <div className={`right-wrapper + ${res}`}>
-               <a href="#">Home</a>
-               <a href="#">About</a>
-               <a href="#">Resume</a>
-               <a href="#">Contact</a>
+                <HashLink to="#intro" smooth>Home</HashLink>
+                <HashLink to="#projects" smooth>Projects</HashLink>
+                <HashLink to="#resume" smooth>About</HashLink>
+                <HashLink to="#contact" smooth>Contact</HashLink>
+                
                </div>
             </div>
         </div>
