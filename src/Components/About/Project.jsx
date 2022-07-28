@@ -1,5 +1,5 @@
 import './Project.scss'
-
+import { Link } from 'react-router-dom'
 const Project = (props)=>{
 
     return(
@@ -17,6 +17,11 @@ const Project = (props)=>{
                 <div className="right-wrapper-project">
                     <div className="pic-project">
                         <img className='project-image' src={props.data.image} alt=""/>
+                    </div>
+                    <div className="project-link">
+                        { props.data.link == '' ? '' :
+                        <a href={props.data.link} target="_blank">View site &rarr;</a>
+                        }
                     </div>
                 </div>
             </div>

@@ -3,7 +3,6 @@ import React, { useEffect,useRef } from 'react'
 import { init } from 'ityped'
 
 
-
 const Intro = ()=>{
 
     const myRef = useRef()
@@ -21,10 +20,11 @@ const Intro = ()=>{
                             <p ref={myRef}></p>
                             <p></p>
                             <p><span>AVINASH</span><span>YADAV</span></p>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus ad repellendus reprehenderit voluptate autem natus consectetur dolorum hic, debitis excepturi.</p>
+                            <p>self learned web developer comfortable working on <span>client-side</span> as well as <span>server-side</span>  technologies, very fast learner with hands on expereince in developing <span>fully responsive websites</span> </p>
+                            
                             <div className="btn">
-                                <span>Get my resume</span>
-                            <a href="assets/AVINASH YADAV.pdf" download="AVINASHYADAV RESUME"><button><span>RESUME</span></button></a>
+                                <span>Get my resume &rarr;</span>
+                                <a href="assets/AVINASH YADAV.pdf" download="AVINASHYADAV RESUME"><button><span>RESUME</span></button></a>
                             </div>
                         </div>
                     </div>
@@ -33,6 +33,7 @@ const Intro = ()=>{
                             <div className="pic">
                                 <img src="assets/1.jpg" alt="img" />
                             </div>
+                            
                         </div>
                     </div>
                 </div>

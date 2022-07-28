@@ -22,10 +22,14 @@
             font-weight: 800;
             border-radius: 50%;
             transition: all 1s;
-
+            
             &:hover{
                 cursor: pointer;
                 color: blanchedalmond;
+            }
+
+            a{
+                text-decoration: none;
             }
         }
 
@@ -86,14 +90,19 @@
         justify-content: center;
         height: fit-content;
         transition: all 2s ease;
-
+        // height: 10vh;
         .left{
             margin-top: 10px;
             flex: 1;
             display: flex;
             justify-content: space-around;
 
+            span{
 
+                a{
+                    text-decoration: none;
+                }
+            }
             .hamburger{
                 display: flex;
                 margin-right: 40px;

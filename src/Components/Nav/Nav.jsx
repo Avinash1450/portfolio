@@ -20,7 +20,7 @@ const Nav = ()=>{
     return(
         <div className="nav">
             <div className="left">
-                <span>Portfolio</span>
+                <span><a href="https://github.com/Avinash1450" target="_blank">My GitHub</a></span>
                 <div className="hamburger" onClick={ ()=>handleHamburger()} >
                    <span></span>
                    <span></span>

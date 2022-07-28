@@ -50,12 +50,13 @@
 @media only screen and (max-width:600px){
 
     .education{
-
+        height: 100%;
         .wrapper{
             border: 1px solid black;
             width: 100%;
             flex-direction: row;
             height: 30px;
+            margin: 0;
             .left-edu{
                 width: 60%;
                 height: 100%;

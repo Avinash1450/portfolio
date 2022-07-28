@@ -42,6 +42,7 @@ const About = ()=>{
         "title"  : "Food app design (only frontend)",
         "description"  : "Fully Responsive food app design",
         "image" : "assets/food.png",
+        "link" : "",
         "skills"  : [
             "HTML",
             "CSS",

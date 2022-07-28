@@ -47,10 +47,7 @@ const Resume = ()=> {
                 <div className="left">
                     <div className="left-wrapper">
                         <div className="icons-wrapper">
-                           {/* <span className="icons">@</span>
-                           <span className="icons">@</span>
-                           <span className="icons">@</span>
-                           <span className="icons">@</span> */}
+                          
                         </div>
                         <div className="text-wrapper">
                             <span onClick={ ()=>handleEducation() } className={ "text " + ( education? "active" : "" )} id="text1"><div className="movable"></div><p>EDUCATION</p></span>
