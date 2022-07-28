@@ -49,7 +49,7 @@
                 }
                 }
                 p{
-                
+                    font-size: $titleFont;
                     span{
                         color: whitesmoke;
                     }
@@ -179,4 +179,15 @@
             }
         }
     }
+}
+
+
+@media only screen and (max-width:360px){
+    .wrapper{
+
+        .left{
+            margin-bottom: 180px;
+        }
+    }
+    
 }
